@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    android:orientation="vertical"
+    tools:context=".NamaActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_marginTop="20px"
+            android:layout_width="wrap_content"
+            android:layout_height="400px"
+            android:layout_alignParentLeft="false"
+            android:layout_gravity="center"
+            android:src="@drawable/logo_dts" />
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:background="@drawable/bg"
+        android:orientation="vertical"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="20px"
+        android:layout_marginBottom="20px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text="DATA PESERTA VSGA"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/putih"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            android:layout_marginTop="40px"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20px"
+            android:paddingTop="20dp"
+            android:text="Nama : "
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/putih"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/editNama"
+            android:layout_width="379dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/hitam"
+            android:backgroundTintMode="screen"
+            android:hint="Masukkan Nama Anda"
+            android:textColor="@color/putih"
+            android:textSize="15dp" />
+
+
+
+
+
+        <Button
+            android:id="@+id/btnOk"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OK" />
+
+        <TextView
+            android:id="@+id/txtHasil"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30px"
+            android:paddingBottom="80dp"
+            android:text="Data Peserta"
+            android:textSize="20dp"
+            android:textColor="@color/putih"/>
+    </LinearLayout>
+
+</LinearLayout>
